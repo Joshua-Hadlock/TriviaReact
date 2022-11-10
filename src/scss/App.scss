@@ -1,0 +1,24 @@
+$main-color: #13262F;
+$secondary-color: #292929;
+$highlights: #E3C567;
+
+body {
+    background-color: $main-color;
+    color: rgb(229, 229, 229);
+}
+
+.bottomNav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    border-bottom: solid 10px $highlights;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body {
+    width: 100%;
+}

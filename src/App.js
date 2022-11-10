@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 
+
+
+
+function bottomNavBar() {
+  return (
+    <div className='bottomNav'>
+      <button>Home</button>
+      <button>About</button>
+      <button>Lyrics</button>
+      <button>Game</button>
+    </div>
+  )
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='body'>
+      <h1 className='title'>MCQUACKERS LYRIC FINDER</h1>
     </div>
+      <div>hello there</div>
+      {bottomNavBar()}
+    </>
   );
 }
 
