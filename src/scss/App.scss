@@ -1,24 +1,41 @@
 $main-color: #13262F;
 $secondary-color: #292929;
 $highlights: #E3C567;
-
-body {
-    background-color: $main-color;
-    color: rgb(229, 229, 229);
-}
-
-.bottomNav {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    bottom: 0px;
-    border-bottom: solid 10px $highlights;
-    background-color: $secondary-color;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.body {
-    width: 100%;
+ * {
+    margin:0;
+ }
+ html {
+    height:100%
+ }
+ body {
+    height:100%;
+ }
+ .main {
+    background-image: url(../images/mainImage.jpg);
+    background-size:cover;
+    background-position:center;
+    height:850px;
+    width:100%;
+ }
+ .mainText {
+    width:650px;
+    height:300px;
+    position:relative;
+    top:250px;
+    left:300px;
+ }
+ .mainText h1 {
+    color:$highlights;
+    text-shadow: 2px 2px white;
+    font-size:70px;
+    font-family: 'Carter One', cursive;
+ }
+.triviaIcons {
+   width:800px;
+   height:800px;
+   background-image: url(../images/My\ project-1.png);
+   background-size:cover;
+   position:relative;
+   left:50%;
+   bottom:20%;
 }
