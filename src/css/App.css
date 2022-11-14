@@ -8,39 +8,94 @@ html {
 
 body {
   height: 100%;
+  background-color: #13262F;
 }
 
 .main {
   background-image: url(../images/mainImage.jpg);
   background-size: cover;
   background-position: center;
-  height: 850px;
+  height: 100%;
   width: 100%;
 }
-
-.mainText {
+.main .mainText {
   width: 650px;
   height: 300px;
   position: relative;
   top: 250px;
   left: 300px;
 }
-
-.mainText h1 {
-  color: #E3C567;
-  text-shadow: 2px 2px white;
+.main .mainText h1 {
+  color: black;
   font-size: 70px;
-  font-family: "Carter One", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
-
-.triviaIcons {
-  width: 800px;
-  height: 800px;
-  background-image: url(../images/My\ project-1.png);
+.main .triviaIcons {
+  width: 600px;
+  height: 600px;
+  background-image: url(../images/My\ project-1\ \(1\).png);
   background-size: cover;
   position: relative;
   left: 50%;
   bottom: 20%;
+  animation: aliceTumbling infinite 60s linear;
+}
+@keyframes aliceTumbling {
+  0% {
+    color: #000;
+    transform: rotate(0) translate3D(0%, 0%, 0);
+  }
+  30% {
+    color: #431236;
+  }
+  100% {
+    color: #000;
+    transform: rotate(360deg) translate3D(0%, 0%, 0);
+  }
+}
+.main button {
+  background-color: #E3C567;
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.main .logo {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  position: absolute;
+}
+
+.navBar {
+  width: 100%;
+  height: 50px;
+  background-color: #13262F;
+  position: fixed;
+}
+
+.navContent {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: green;
+}
+
+.navBar ul li {
+  display: inline;
+  padding: 0px 200px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 1000px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=App.css.map */
