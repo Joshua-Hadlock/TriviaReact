@@ -84,14 +84,17 @@ $highlights: #E3C567;
    height:50px;
    width:100%;
    margin: 0 auto;
-   background-color:green;
  }
  .navBar a {
    display:inline;
    padding:0px 200px;
    color:white;
    text-align:center;
-
+   text-decoration:none;
+  transition:.5s;
+ }
+ .navBar a:hover {
+  color:$highlights;
  }
  footer {
   width:100%;
@@ -100,5 +103,51 @@ $highlights: #E3C567;
  }
 
  h1 {
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size:50px;
+ }
+
+ .helpBody {
+  width:100%;
+  height:900px;
+  background-color:rgba(168, 125, 56, 0.609);
+  background-image: url(../images/dots.png);
+  background-size:500px;
+  background-position:center;
+  h3 {
+    color:white;
+    font-size:30px;
+   }
+   .faq{
+    width:800px;
+    height:400px;
+    margin:0 auto;
+    position:relative;
+    top:50px;
+    padding:30px;
+    border-radius:10px;
+    background-color:rgb(118, 87, 38);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   .contact{
+    text-align:center;
+    position:relative;
+    top:200px;
+    background-color:$main-color;
+    width:1300px;
+    margin:0 auto;
+    padding:30px;
+   }
+   .logo {
+    margin-top:10px;
+   width:100px;
+   height:100px;
+   background-image: url(../images/My\ project-1.png);
+   background-size:150px;
+   position:absolute;
+   background-position:center;
+   background-color:white;
+   border-radius:50%;
+   margin-left:10px;
+  }
  }
