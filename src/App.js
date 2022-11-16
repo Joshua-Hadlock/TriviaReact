@@ -1,34 +1,40 @@
 import './css/App.css';
 
-function App() {
+import { BrowserRouter as Router, Switch, Route, Routes, Link } from "react-router-dom";
+
+import HomePage from './pages/Home';
+// import NavBar from './pages/NavBar';
+import AboutPage from './pages/About';
+import HelpPage from './pages/Help';
+import TriviaPage from './pages/Trivia';
+
+export default function App() {
   return (
-    <div>
-      <div className="main">
-        <div className="logo"></div>
-        <div className="mainText">
-          <h1>Test your knowledge with 
-            McQuackers
-          </h1>
-          <button>Click here to get started</button>
-        </div>
-        <div className="triviaIcons"></div>
-      </div>
-      <div className="navBar">
-        <div className="navContent">
-          <ul>
-          <li>Home</li>
-          <li>Help</li>
-          <li>About</li>
-          <li>Trivia!</li>
-        </ul>
-        </div>
-        
-      </div>
-      <footer>
-        
-      </footer>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="/Help" element={<HelpPage />}></Route>
+        <Route path="/About" element={<AboutPage />}></Route>
+        <Route path="/Trivia" element={<TriviaPage />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+
+function NavBar() {
+  return (
+    <div className="navBar">
+            <div className="navContent">
+              <nav>
+                <Link to="/" >Home</Link>
+                <Link to="/Help" >Help</Link>
+                <Link to="/About" >About</Link>
+                <Link to="/Trivia" >Trivia!</Link>
+              </nav>
+            </div>
+            
+          </div>
+    )
+}

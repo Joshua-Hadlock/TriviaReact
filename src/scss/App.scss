@@ -76,6 +76,8 @@ $highlights: #E3C567;
    height:50px;
    background-color:$main-color;
    position:fixed;
+   color: white;
+  bottom: 0px;
 
  }
  .navContent {
@@ -84,7 +86,7 @@ $highlights: #E3C567;
    margin: 0 auto;
    background-color:green;
  }
- .navBar ul li {
+ .navBar a {
    display:inline;
    padding:0px 200px;
    color:white;
@@ -97,4 +99,6 @@ $highlights: #E3C567;
   background-color:red;
  }
 
- 
+ h1 {
+  color: white;
+ }
