@@ -1,7 +1,7 @@
 export default function HomePage() {
     return (
     <div>
-        <div className="main">
+        <div id="main">
           <div className="logo"></div>
           <div className="mainText">
             <h1>Test your knowledge with 
