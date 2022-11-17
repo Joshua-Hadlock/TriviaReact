@@ -1,6 +1,6 @@
 import getApi from "../components/triviaAPI";
 import { useState } from "react";
-import displayQuestions from "../components/displayQuestions";
+import DisplayQuestions from "../components/displayQuestions";
 import { json } from "react-router-dom";
 
 
@@ -10,18 +10,15 @@ export default function TriviaPage() {
     const [apiData, setApi] = useState();
     
     async function changeApi() {
-    //    const results = await getApi();
-    //     console.log(results);
-    //     setApi(results);
-    
     const Data = await getApi();
     setApi(Data);
     }
+
     return (
-      <div>
+      <div className="triviaPage">
         <h1>Trivia</h1>
         <button onClick={changeApi}>Click to generate Questions</button>
-        {displayQuestions(apiData)}
+        {DisplayQuestions(apiData)}
       </div>
     )
   }
