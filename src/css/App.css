@@ -11,34 +11,34 @@ body {
   background-color: #13262F;
 }
 
-.main {
+#main {
   background-image: url(../images/mainImage.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
-.main .mainText {
+#main .mainText {
   width: 650px;
   height: 300px;
   position: relative;
   top: 250px;
   left: 300px;
 }
-.main .mainText h1 {
+#main .mainText h1 {
   color: black;
   font-size: 70px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
-.main .triviaIcons {
+#main .triviaIcons {
   width: 600px;
   height: 600px;
   background-image: url(../images/My\ project-1\ \(1\).png);
   background-size: cover;
   position: relative;
   left: 50%;
-  bottom: 20%;
+  bottom: 150px;
   animation: aliceTumbling infinite 60s linear;
 }
 @keyframes aliceTumbling {
@@ -54,7 +54,7 @@ body {
     transform: rotate(360deg) translate3D(0%, 0%, 0);
   }
 }
-.main button {
+#main button {
   background-color: #E3C567;
   width: 300px;
   height: 50px;
@@ -62,7 +62,7 @@ body {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.main .logo {
+#main .logo {
   margin-top: 10px;
   width: 150px;
   height: 150px;
@@ -78,6 +78,7 @@ body {
   position: fixed;
   color: white;
   bottom: 0px;
+  z-index: 5;
 }
 
 .navContent {
@@ -93,6 +94,8 @@ body {
   text-align: center;
   text-decoration: none;
   transition: 0.5s;
+  position: relative;
+  top: 10px;
 }
 
 .navBar a:hover {
@@ -112,26 +115,11 @@ h1 {
 
 .helpBody {
   width: 100%;
-  height: 900px;
+  height: 500px;
   background-color: rgba(168, 125, 56, 0.609);
   background-image: url(../images/dots.png);
   background-size: 500px;
   background-position: center;
-}
-.helpBody h3 {
-  color: white;
-  font-size: 30px;
-}
-.helpBody .faq {
-  width: 800px;
-  height: 400px;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: rgb(118, 87, 38);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .helpBody .contact {
   text-align: center;
@@ -141,6 +129,7 @@ h1 {
   width: 1300px;
   margin: 0 auto;
   padding: 30px;
+  font-family: "Roboto", sans-serif;
 }
 .helpBody .logo {
   margin-top: 10px;
@@ -153,6 +142,59 @@ h1 {
   background-color: white;
   border-radius: 50%;
   margin-left: 10px;
+}
+
+.scrollContent {
+  width: 100%;
+  height: 1400px;
+  background-image: url(../images/duck.jpeg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(249, 249, 249);
+}
+.scrollContent h3 {
+  color: white;
+  font-size: 30px;
+}
+.scrollContent .faq {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  padding: 30px;
+  background-color: rgba(0, 75, 140, 0.472);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.scrollContent .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.scrollContent .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.scrollContent .map {
+  height: 300px;
+  width: 800px;
+  margin: 0 auto;
+}
+.scrollContent .iframeContainer {
+  margin: 0 auto;
+  height: 300px;
+  width: 800px;
+  position: relative;
+  top: 35%;
+}
+.scrollContent h4 {
+  text-align: center;
+  position: relative;
+  top: 33%;
 }
 
 /*# sourceMappingURL=App.css.map */
