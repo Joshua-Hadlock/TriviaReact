@@ -21,6 +21,16 @@
 .textWhite {
   color: rgb(223, 223, 223);
   margin: 4px;
+  cursor: pointer;
+}
+
+.answer {
+  transition: all 0.4s;
+  border-radius: 3px;
+}
+
+.answer:hover {
+  background-color: #6ea0b7;
 }
 
 .fullWidth {
@@ -52,6 +62,14 @@
 
 .off {
   visibility: hidden;
+}
+
+.bg-green {
+  background-color: rgb(117, 168, 117);
+}
+
+.bg-red {
+  background-color: rgb(212, 123, 123);
 }
 
 * {
