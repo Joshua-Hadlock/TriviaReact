@@ -87,7 +87,6 @@ $highlights: #E3C567;
    height:50px;
    width:100%;
    margin: 0 auto;
-   border-top: $highlights solid 2px;
  }
  .navBar a {
    display:inline;
@@ -201,8 +200,10 @@ $highlights: #E3C567;
  .aboutPage {
   width:100%;
   height:950px;
-  background-color:white;
-  border-bottom:5px solid $highlights;
+  background-image: url(../images/lake.jpeg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-color:rgb(255, 255, 255);
   .mcqLogo {
     height:500px;
     width:500px;
@@ -235,7 +236,7 @@ $highlights: #E3C567;
       margin-top:20px;
       width:300px;
       height:50px;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid white;
       text-align:center;
       h3 {
         position:relative;
@@ -246,16 +247,17 @@ $highlights: #E3C567;
  }
  .scrolledAbout {
   width:100%;
-  height:600px;
+  height:500px;
   background-color:$main-color;
   display:flex;
   flex-direction:row;
   .locationLeft {
     width:50%;
     height:500px;
-    background-image: url(../images/vegas.webp);
+    background-image: url(../images/vegas.jpeg);
     background-size:cover;
-    background-position:center;
+    background-position:top;
+    background-attachment: fixed;
   }
   .locationDesc {
     width:50%;
@@ -289,4 +291,79 @@ $highlights: #E3C567;
  .center {
   align-items: center;
   justify-content: center;
+ }
+ .us1 {
+  width:100%;
+  height:500px;
+  display:flex;
+  flex-direction:row;
+  .us1Left {
+    width:50%;
+    height:500px;
+    background-color:rgb(255, 255, 255);
+    .us1LeftText {
+      width:700px;
+      height:200px;
+      margin:0 auto;
+      position:relative;
+      top:25%;
+    }
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color:black;
+    }
+    p {
+      color:black;
+      width:700px;
+    }
+  }
+  .us1Right {
+    width:50%;
+    height:500px;
+    background-color:white;
+  }
+ }
+ .Isaac {
+  width:500px;
+  height:500px;
+  background-image: url(../images/me.png);
+  background-size:cover;
+  margin:0 auto;
+ }
+ .us2 {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  .us2Left {
+    width:50%;
+    height:500px;
+    background-color:rgb(0, 0, 0);
+  }
+  .us2Right {
+    width:50%;
+    height:500px;
+    background-color:rgb(0, 0, 0);
+    .us2RightText {
+      width:700px;
+      height:200px;
+      margin:0 auto;
+      position:relative;
+      top:25%;
+    }
+     h1 {
+      font-family: 'Roboto', sans-serif;
+    }
+    p {
+      color:white;
+      width:700px;
+    }
+  }
+ }
+ .Josh {
+  width:500px;
+  height:500px;
+  background-image: url(../images/josh.png);
+  background-size:cover;
+  background-position:center;
+  margin:0 auto;
  }

@@ -141,7 +141,6 @@ body {
   height: 50px;
   width: 100%;
   margin: 0 auto;
-  border-top: #E3C567 solid 2px;
 }
 
 .navBar a {
@@ -257,8 +256,10 @@ h1 {
 .aboutPage {
   width: 100%;
   height: 950px;
-  background-color: white;
-  border-bottom: 5px solid #E3C567;
+  background-image: url(../images/lake.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(255, 255, 255);
 }
 .aboutPage .mcqLogo {
   height: 500px;
@@ -293,7 +294,7 @@ h1 {
   margin-top: 20px;
   width: 300px;
   height: 50px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   text-align: center;
 }
 .aboutPage .aboutText .scrollForMore h3 {
@@ -303,7 +304,7 @@ h1 {
 
 .scrolledAbout {
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-color: #13262F;
   display: flex;
   flex-direction: row;
@@ -311,9 +312,10 @@ h1 {
 .scrolledAbout .locationLeft {
   width: 50%;
   height: 500px;
-  background-image: url(../images/vegas.webp);
+  background-image: url(../images/vegas.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
 }
 .scrolledAbout .locationDesc {
   width: 50%;
@@ -343,6 +345,85 @@ h1 {
 .center {
   align-items: center;
   justify-content: center;
+}
+
+.us1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.us1 .us1Left {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+.us1 .us1Left .us1LeftText {
+  width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.us1 .us1Left h1 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.us1 .us1Left p {
+  color: black;
+  width: 700px;
+}
+.us1 .us1Right {
+  width: 50%;
+  height: 500px;
+  background-color: white;
+}
+
+.Isaac {
+  width: 500px;
+  height: 500px;
+  background-image: url(../images/me.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.us2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.us2 .us2Left {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+}
+.us2 .us2Right {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+}
+.us2 .us2Right .us2RightText {
+  width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.us2 .us2Right h1 {
+  font-family: "Roboto", sans-serif;
+}
+.us2 .us2Right p {
+  color: white;
+  width: 700px;
+}
+
+.Josh {
+  width: 500px;
+  height: 500px;
+  background-image: url(../images/josh.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=App.css.map */

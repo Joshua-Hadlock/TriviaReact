@@ -12,7 +12,7 @@ export default function AboutPage() {
             <p>We believe that everyone is secretly a genius and we thought that the best way to prove that is 
               to unlock hidden knowledge in their head. Originally a school project two high school students by 
               the name of Joshua Hadlock and Isaac Tellez created McQuackers. When we asked the creator of the 
-              brand name why he chose McQuackers he just said "Well it was just the first thing that came to mind"
+              brand name why he chose McQuackers he said "Well it was just the first thing that came to mind"
             </p>
             <div className="scrollForMore"><h3>Scroll For More</h3></div>
             </div>
@@ -31,6 +31,38 @@ export default function AboutPage() {
               </p>
               </div>
             </div>
+          </div>
+          <div class="us1">
+            <div class="us1Left">
+            <div class="us1LeftText">
+            <h1>Isaac Tellez</h1>
+            <p>Isaac Tellez is our top designer. Isaac is responsible for all of the design in this website including this very page.
+              Isaac has over a year expirience as a web developer he first started in high school and is now studying at Mountainland
+              Technical College. Isaac currently lives in Utah and attends Westlake High School. Isaac has lots of knowledge with CSS,
+              HTML, Bootstrap, Bits of Javascript and SCSS. Isaac is from California but was raised and live most of his life in Utah
+            </p>
+            </div>
+            </div>
+            <div class="us1Right">
+              <div class="Isaac"></div>
+            </div>
+
+          </div>
+          <div class="us2">
+            <div class="us2Left">
+            <div class="Josh"></div>
+            </div>
+            <div class="us2Right">
+              <div class="us2RightText">
+                <h1>Joshua Hadlock</h1>
+            <p>Joshua Hadlock is our top developer. He is responsible for all Javascript and Api in this website and 
+              can make one heck of a website. He is a web developer that is currently attending Mountainland Technical College
+              in Lehi Utah. He has over a year of expirience of coding and has lots of knowledge with almost all of the coding
+              languages. He is from Utah and still lives in Utah to this day he goes to Lone Peak High School.  </p>
+              </div>
+            
+            </div>
+
           </div>
         </div>
       </div>
