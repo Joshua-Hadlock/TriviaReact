@@ -87,6 +87,7 @@ $highlights: #E3C567;
    height:50px;
    width:100%;
    margin: 0 auto;
+   border-top: $highlights solid 2px;
  }
  .navBar a {
    display:inline;
@@ -196,4 +197,13 @@ $highlights: #E3C567;
     position:relative;
     top:33%;
   }
+ }
+
+ .d-flex {
+  display: flex;
+ }
+
+ .center {
+  align-items: center;
+  justify-content: center;
  }

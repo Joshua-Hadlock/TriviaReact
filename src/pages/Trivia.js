@@ -13,12 +13,19 @@ export default function TriviaPage() {
     const Data = await getApi();
     setApi(Data);
     }
+    function move() {
 
+    }
     return (
       <div className="triviaPage">
         <h1>Trivia</h1>
         <button onClick={changeApi}>Click to generate Questions</button>
         {DisplayQuestions(apiData)}
+
+        <div className="toggleOnOff d-flex center">
+          <div className="togglerOnOff" onClick={move()}></div>
+          <div className="togglerOnOff off"></div>
+        </div>
       </div>
     )
   }

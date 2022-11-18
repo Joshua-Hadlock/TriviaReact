@@ -13,8 +13,8 @@ import {
       5, // intensity
     );
   
-    const mainLight = new DirectionalLight('white', 5);
-    mainLight.position.set(10, 10, 10);
+    const mainLight = new DirectionalLight('gray', 3);
+    mainLight.position.set(5, 5, 5);
   
     return { ambientLight, mainLight };
   }

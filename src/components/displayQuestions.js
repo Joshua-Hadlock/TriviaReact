@@ -13,11 +13,15 @@ export default function DisplayQuestions(data) {
         
     }, []);
     if (data) {
+        if (document.getElementById('scene-container')) {
+            document.getElementById('scene-container').innerHTML = '';
+        }
         console.log(data.results)
         const displayableData = data.results.map((value) => {return (
         <div className="triviaCard">
             <div>
                 <h4 className="textWhite">{value.question}</h4>
+                <div className="question"></div>
             </div>
             <div>
                 <h5 className="textWhite">{value.correct_answer}</h5>
