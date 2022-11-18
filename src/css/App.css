@@ -147,7 +147,7 @@ h1 {
 .helpBody {
   width: 100%;
   height: 500px;
-  background-color: rgba(168, 125, 56, 0.609);
+  background-color: rgb(249, 249, 249);
   background-image: url(../images/dots.png);
   background-size: 500px;
   background-position: center;
@@ -226,6 +226,88 @@ h1 {
   text-align: center;
   position: relative;
   top: 33%;
+}
+
+.aboutPage {
+  width: 100%;
+  height: 950px;
+  background-color: white;
+  border-bottom: 5px solid #E3C567;
+}
+.aboutPage .mcqLogo {
+  height: 500px;
+  width: 500px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  top: 15%;
+}
+.aboutPage .aboutText {
+  width: 900px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  right: 5%;
+  bottom: 25%;
+}
+.aboutPage .aboutText .aboutH1 {
+  color: black;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutPage .aboutText h3 {
+  font-family: "Roboto", sans-serif;
+}
+.aboutPage .aboutText p {
+  width: 700px;
+}
+.aboutPage .aboutText .scrollForMore {
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.aboutPage .aboutText .scrollForMore h3 {
+  position: relative;
+  top: 13px;
+}
+
+.scrolledAbout {
+  width: 100%;
+  height: 600px;
+  background-color: #13262F;
+  display: flex;
+  flex-direction: row;
+}
+.scrolledAbout .locationLeft {
+  width: 50%;
+  height: 500px;
+  background-image: url(../images/vegas.webp);
+  background-size: cover;
+  background-position: center;
+}
+.scrolledAbout .locationDesc {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(131, 131, 131);
+}
+.scrolledAbout .locationDesc h1 {
+  color: black;
+}
+.scrolledAbout .locationDesc p {
+  width: 500px;
+  font-size: 20px;
+}
+.scrolledAbout .locationDesc .scrolledAboutText {
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=App.css.map */
