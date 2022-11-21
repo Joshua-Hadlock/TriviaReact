@@ -25,16 +25,11 @@ export default function App() {
 
 function NavBar() {
   return (
-    <div className="navBar">
-            <div className="navContent">
-              <nav>
-                <Link to="/" >Home</Link>
-                <Link to="/Help" >Help</Link>
-                <Link to="/About" >About</Link>
-                <Link to="/Trivia" >Trivia!</Link>
-              </nav>
-            </div>
-            
-          </div>
+    <nav className='navBar'>
+      <Link to="/" >Home</Link>
+      <Link to="/Help" >Help</Link>
+      <Link to="/About" >About</Link>
+      <Link to="/Trivia" >Trivia!</Link>
+    </nav>
     )
 }
