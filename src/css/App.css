@@ -151,7 +151,7 @@ body {
   background-color: #13262F;
   position: fixed;
   bottom: 0px;
-  z-index: 5;
+  z-index: 20000;
   display: flex;
   align-items: center;
   justify-content: space-around;
