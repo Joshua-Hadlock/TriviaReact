@@ -1,16 +1,36 @@
 
 export default function HelpPage() {
+  function parallaxEffect() {
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text");
+    let help = document.getElementById("helpText");
+
+    window.addEventListener('scroll', function() {
+      var value = window.scrollY;
+
+      bg.style.top = value + 'px';
+      moon.style.left = -value * 0.5 + 'px';
+      mountain.style.top = -value * 0.15 + 'px';
+      road.style.top = value * 0.15 + 'px';
+      text.style.top = value * 1 + 'px';
+      help.style.top = value + 'px'
+    })
+  }
+  parallaxEffect()
     return (
       <div>
-        <div className="helpBody">
-          <div className="circle"></div>
-        <div className="logo"></div>
-          <h1 className="contact">Have Questions? Please Contact us at 625-782-3774</h1>
-          
+        {/* <div className="helpBody">
+
+        <div class="logo"></div>
+        <h1>Help</h1>
+        <div class="arrow"></div>
 
         </div>
-        <div class="scrollContent">
         <div className="faq">
+          <div class="faqText">
             <h1>Frequently Asked Questions</h1>
             <h3 style={{marginTop:'20px'}}>Q. What kind of Trivia Questions do you guys have ?</h3>
             <h3>A. We have all kinds of Trivia Questions</h3>
@@ -18,17 +38,24 @@ export default function HelpPage() {
             <h3>A. Yes we do </h3>
             <h3 style={{marginTop:'10px'}}>Q. Where are you guys located?</h3>
             <h3>A. We are an online company only but our corporate building is located in Las Vegas NV </h3>
+            </div>
           </div>
-          <h4>Our Corporate location</h4>
-          <div class="iframeContainer">
-            <iframe class="map"
-        title="Inline Frame Example"
-       src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-        </iframe>
+          <div class="scrollContent">
+
+          </div> */}
+          <div className="parBody">
+
+          <img src="images/bg.jpg" id="bg"></img>
+          <img src="images/moon.png" id="moon"></img>
+          <img src="images/mountain.png" id="mountain"></img>
+          <img src="images/road.png" id="road"></img>
+          <img src="images/logo2.png" id="text"></img>
+          <h1 id="helpText">Help</h1>
+
           </div>
-          
-        </div>
+          <div style={{height:'500px', width:'100%'}}></div>
       </div>
 
     )
+  
   }
