@@ -19,7 +19,7 @@ export default function HelpPage() {
       help.style.top = value + 'px'
     })
   }
-  parallaxEffect()
+  parallaxEffect();
     return (
       <div>
         {/* <div className="helpBody">
@@ -44,7 +44,7 @@ export default function HelpPage() {
 
           </div> */}
           <div className="parBody">
-
+          
           <img src="images/bg.jpg" id="bg"></img>
           <img src="images/moon.png" id="moon"></img>
           <img src="images/mountain.png" id="mountain"></img>
@@ -54,6 +54,7 @@ export default function HelpPage() {
 
           </div>
           <div style={{height:'500px', width:'100%'}}></div>
+          
       </div>
 
     )

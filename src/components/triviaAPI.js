@@ -1,4 +1,3 @@
-export default async function getApi(category) {
-    console.log(category)
-    return fetch(`https://opentdb.com/api.php?amount=10&category=${category}&difficulty=easy&type=multiple`).then(result => result.json());
+export default async function getApi(category, number, difficulty) {
+    return fetch(`https://opentdb.com/api.php?amount=${number}&category=${category}&difficulty=${difficulty}&type=multiple`).then(result => result.json());
 }
