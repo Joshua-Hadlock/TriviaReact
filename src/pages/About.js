@@ -1,4 +1,28 @@
+import { useEffect, useRef } from 'react';
+
 export default function AboutPage() {
+  function parallaxEffect() {
+    let mountain = document.getElementById("Mountain");
+    let ducks = document.getElementById("Ducks");
+
+    window.addEventListener('scroll', function() {
+      var value = window.scrollY;
+
+      mountain.style.top = value * 0.15 + 'px';
+      ducks.style.left = value * 0.15 + 'px';
+    })
+  }
+
+  const nightRef = useRef(null);
+
+  useEffect(() => {
+    const isReady = nightRef.current;
+
+    if(isReady) {
+      parallaxEffect()
+    }
+
+  }, [nightRef.current])
     return (
       <div>
         <div className="aboutBody">
@@ -31,6 +55,11 @@ export default function AboutPage() {
               </p>
               </div>
             </div>
+          </div>
+          <div class="ArtWork">
+            <img src="images/Mountain.png" id="Mountain" ref={nightRef}></img>
+            <img src="images/DucksFlyingBackground.png" id="Ducks"></img>
+            <h1>"Any bookmark worth more than a dollar is a waste of money because you could just use the dollar" <span>- Random Person</span></h1>
           </div>
           <div class="us1">
             <div class="us1Left">

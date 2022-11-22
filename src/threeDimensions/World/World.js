@@ -19,6 +19,7 @@ class World {
     camera = createCamera();
     renderer = createRenderer();
     scene = createScene();
+    scene.background = null;
     loop = new Loop(camera, scene, renderer);
     container.append(renderer.domElement);
 

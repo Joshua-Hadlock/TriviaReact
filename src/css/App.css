@@ -16,6 +16,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../images/coolestDuckAround.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .textWhite {
@@ -176,95 +181,6 @@ footer {
 h1 {
   color: rgb(255, 255, 255);
   font-size: 50px;
-}
-
-.helpBody {
-  width: 100%;
-  height: 950px;
-  background-color: rgb(249, 249, 249);
-  background-image: url(../images/lake2.webp);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.helpBody h1 {
-  position: relative;
-  left: 43%;
-  top: 41%;
-  font-family: "Roboto", sans-serif;
-}
-.helpBody .arrow {
-  height: 100px;
-  width: 100px;
-  background-image: url(../images/arrow1.png);
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
-  position: relative;
-  top: 73%;
-  animation: myAnim 2s ease 0s infinite normal forwards;
-}
-@keyframes myAnim {
-  0%, 100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 0;
-  }
-  10% {
-    transform: rotate(2deg);
-  }
-  20%, 40%, 60% {
-    transform: rotate(-4deg);
-  }
-  30%, 50%, 70% {
-    transform: rotate(4deg);
-  }
-  80% {
-    transform: rotate(-2deg);
-  }
-  90% {
-    transform: rotate(2deg);
-  }
-}
-
-.scrollContent {
-  width: 50%;
-  height: 700px;
-  background-image: url(../images/pond.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-.scrollContent .call {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  left: 62%;
-  bottom: 5%;
-}
-
-.faq {
-  width: 100%;
-  height: 500px;
-  background-image: url(../images/road.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: "Roboto", sans-serif;
-}
-.faq .faqText {
-  width: 1150px;
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
-  top: 80px;
-  color: white;
-}
-.faq h4 {
-  text-align: center;
-  position: relative;
-  top: 33%;
 }
 
 .aboutPage {
@@ -499,6 +415,147 @@ h1 {
 
 #road {
   z-index: 2;
+}
+
+.helpBody {
+  width: 100%;
+  height: 1500px;
+  background-color: rgb(249, 249, 249);
+  background-image: url(../images/lake2.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.helpBody .faqContainer {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/road.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.helpBody .faqContainer .faqText {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.helpBody .faqContainer .faqText h1 {
+  font-family: "Roboto", sans-serif;
+}
+.helpBody .faqContainer .faqText h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.helpBody .contactPage {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/coolestDuckAround.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.helpBody .contactPage h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.ArtWork {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/mainImage.jpg);
+  background-size: cover;
+}
+.ArtWork h1 {
+  width: 700px;
+  position: absolute;
+  right: 1100px;
+  font-family: "Roboto", sans-serif;
+  z-index: 3;
+  color: black;
+}
+
+.ArtWork:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10000;
+}
+
+.ArtWork:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7333333333);
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+.ArtWork img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.testimonial {
+  width: 100%;
+  height: 700px;
+  background-color: green;
+}
+
+.carouselSize {
+  width: 100%;
+  height: 700px;
+}
+.carouselSize .stars {
+  width: 200px;
+  height: 50px;
+  background-image: url(../images/starsClear.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+#cI1 {
+  background-image: url(../images/oldlLady.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#cI2 {
+  background-image: url(../images/coco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#cI3 {
+  background-image: url(../images/blindMan.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+span {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
 }
 
 /*# sourceMappingURL=App.css.map */
