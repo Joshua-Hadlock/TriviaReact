@@ -1,5 +1,5 @@
 .triviaCard {
-  background-color: #325d71;
+  background-color: rgba(50, 93, 113, 0.6666666667);
   padding: 10px;
   margin: 10px;
   width: 300px;
@@ -574,16 +574,28 @@ span {
   top: -5px;
 }
 
-.generateButton {
-  border-radius: 5px;
-  background-color: lightblue;
-  border: none;
-  padding: 10px;
-  margin-top: 10px;
+.triviaPage .logo {
+  width: 800px;
+  height: 800px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  margin-top: 50px;
+  animation: myAnim 30s ease 0s infinite normal forwards;
 }
-
+@keyframes myAnim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .triviaPage h1 {
   color: white;
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
 }
 .triviaPage .difficultyDrop {
   width: 100px;
@@ -592,13 +604,33 @@ span {
   border: none;
   border-radius: 10px;
   margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .triviaPage .numberOfTrivia {
   width: 100px;
   height: 40px;
   margin-top: 20px;
   border-radius: 10px;
+  border: 2px solid black;
+}
+.triviaPage .selectTrivia {
+  height: 50px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.triviaPage .generateButton {
+  border-radius: 5px;
+  background-color: rgb(134, 207, 162);
   border: none;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.triviaPage .generateButton:hover {
+  background-color: rgb(91, 153, 115);
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */

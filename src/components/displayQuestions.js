@@ -72,7 +72,7 @@ export default function DisplayQuestions(data) {
     return (
         <div className="questions">
             {displayableData}
-            <h1>score: {score}</h1>
+            <h1>Score: {score}</h1>
            
         </div>
     )
