@@ -33,7 +33,7 @@ import {
     const colorTexture = new MeshStandardMaterial({ color: '#dbb133' });
     const cube = new Mesh(geometry, colorTexture);
   
-    // cube.rotation.set(-0.5, -0.1, 0.8);
+    cube.rotation.set(-0.5, -0.1, 0.8);
   
     const radiansPerSecond = MathUtils.degToRad(270);
   

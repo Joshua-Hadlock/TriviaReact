@@ -5,9 +5,7 @@ import createData from "./createData";;
 
 export default function DisplayQuestions(data) {
     const [score, setScore] = useState(0);
-    const [rerender, setRerender] = useState(0);
 
-    
     useEffect(() => {
             document.getElementById('scene-container').innerHTML = '';
             displayCube(document.getElementById('scene-container'));
@@ -75,6 +73,7 @@ export default function DisplayQuestions(data) {
         <div className="questions">
             {displayableData}
             <h1>score: {score}</h1>
+           
         </div>
     )
     } else {
