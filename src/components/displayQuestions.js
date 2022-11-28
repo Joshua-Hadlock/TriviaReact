@@ -5,37 +5,8 @@ import createData from "./createData";;
 
 export default function DisplayQuestions(data) {
     const [score, setScore] = useState(0);
-    const [count, setCount] = useState(0);
+    const [rerender, setRerender] = useState(0);
 
-// useEffect(() => { 
-//     const interval = setInterval(() => { 
-//     const newTime = timer + 1; 
-//     setTimer(newTime); 
-//     console.log(timer) }, 1000);
-//  return () => clearInterval(interval); }, []);
-
- useEffect(
-    () => {
-        const timer = () => {
-            setCount(count + 1);
-        }
-
-        // if you want it to finish at some point
-
-        const id = setInterval(timer, 1000);
-        return () => clearInterval(id);
-    },
-    [count]
-);
-
-
-
-
-
-
-
-
- 
     
     useEffect(() => {
             document.getElementById('scene-container').innerHTML = '';
@@ -58,9 +29,8 @@ export default function DisplayQuestions(data) {
 
     const createAnAnswer = (value) => {
         const create = value.map((answer) => {
-            if (answer.question) {
-
-            } else if (answer.answer === false) {
+            if (answer.answer === false) {
+                
                 return (<h5 className="textWhite answer" onClick={handleClickIncorrect}>{answer.name}</h5>)
             } else if (answer.answer === true) {
         return (
@@ -105,7 +75,6 @@ export default function DisplayQuestions(data) {
         <div className="questions">
             {displayableData}
             <h1>score: {score}</h1>
-            <h1>Timer: {count}</h1>
         </div>
     )
     } else {

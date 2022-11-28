@@ -1,7 +1,8 @@
 import getApi from "../components/triviaAPI";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DisplayQuestions from "../components/displayQuestions";
-import createData from "../components/createData";;
+import createData from "../components/createData";import { linkClasses } from "@mui/material";
+;
 
 
 
@@ -11,15 +12,44 @@ export default function TriviaPage() {
     const [numberOfQuestions, setNumberOfQuestions] = useState(10);
     const [difficulty, setDifficulty] = useState('easy')
     const [apiData, setApi] = useState();
-    
+    const [count, setCount] = useState(0);
+    const [timerOff, setTimerOff] = useState(true);
+
+    useEffect(
+      () => {
+          const timer = () => {
+              setCount(count + 1);
+          }
+  
+          // if you want it to finish at some point
+  
+          const id = setInterval(timer, 1000);
+          return () => clearInterval(id);
+      },
+      [count]
+  );
+
+
+
     async function changeApi() {
     const Data = await getApi(category, numberOfQuestions, difficulty);
     const newData = createData(Data);
     setApi(newData)
+    setCount(0);
+
+    if (timerOff) {
+      document.getElementById('Timer').classList.remove('off');
+      setTimerOff(false);
     }
-    function move() {
+
+    document.querySelectorAll('.bg-red').forEach(e => e.classList.remove('bg-red'));
+    document.querySelectorAll('.bg-green').forEach(e => e.classList.remove('bg-green'));
+  
+    
+    
 
     }
+    
 
     function changeCategory(e) {
       setCategory(e);
@@ -80,10 +110,8 @@ export default function TriviaPage() {
 
         {DisplayQuestions(apiData)}
 
-        <div className="toggleOnOff d-flex center off">
-          <div className="togglerOnOff" onClick={move()}></div>
-          <div className="togglerOnOff off"></div>
-        </div>
+        <h1 className="off" id='Timer'>Timer: {count}</h1>
+        <div>padding</div>
       </div>
     )
   }
