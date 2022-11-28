@@ -66,10 +66,11 @@ export default function TriviaPage() {
 
     return (
       <div className="triviaPage">
-        <h1>Trivia!</h1>
+        <div className="logo"></div>
+        <h1>McQauckers Trivia!</h1>
         
 
-        <select onChange={e => changeCategory(e.target.value)}>
+        <select className="selectTrivia" onChange={e => changeCategory(e.target.value)}>
             {/* <option value="any">Any Category</option> */}
             <option value="9">General Knowledge</option>
             <option value="10">Entertainment: Books</option>
@@ -111,7 +112,7 @@ export default function TriviaPage() {
         {DisplayQuestions(apiData)}
 
         <h1 className="off" id='Timer'>Timer: {count}</h1>
-        <div>padding</div>
+        <button>Finish</button>
       </div>
     )
   }

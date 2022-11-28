@@ -30,7 +30,7 @@ import {
   function createCube() {
     const geometry = new BoxBufferGeometry(2, 2, 2);
     const material = createMaterial();
-    const colorTexture = new MeshStandardMaterial({ color: '#dbb133' });
+    const colorTexture = new MeshStandardMaterial({ color: '#2ca0c9' });
     const cube = new Mesh(geometry, colorTexture);
   
     cube.rotation.set(-0.5, -0.1, 0.8);

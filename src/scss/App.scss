@@ -490,18 +490,32 @@ span {
   position:relative;
   top:-5px;
 }
-.generateButton {
-  border-radius:5px;
-  background-color:lightblue;
-  border:none;
-  padding:10px;
-  margin-top:10px;
-}
 
 // Trivia Page Styling
 .triviaPage {
+  .logo {
+    width:800px;
+    height:800px;
+    background-image: url(../images/My\ project-1.png);
+    background-size:cover;
+    position:fixed;
+    z-index:-1;
+    margin-top:50px;
+    animation: myAnim 30s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   h1{
     color:white;
+    font-family: 'Roboto', sans-serif;
+    margin-top:100px;
   }
   .difficultyDrop {
     width:100px;
@@ -510,13 +524,41 @@ span {
     border:none;
     border-radius:10px;
     margin-top:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
   }
   .numberOfTrivia {
     width:100px;
     height:40px;
     margin-top:20px;
     border-radius:10px;
+    border:2px solid black;
+  }
+  .selectTrivia {
+    height:50px;
+    border-radius:10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+  }
+  .generateButton {
+    border-radius:5px;
+    background-color:rgb(134, 207, 162);
     border:none;
+    padding:10px;
+    margin-top:10px;
+    transition:.5s;
+  }
+  .generateButton:hover {
+    background-color:rgb(91, 153, 115);
+    color:white;
+  }
+  .questions {
+    h1 {
+      
+    }
+  }
+  #Timer {
+    
   }
 }
 
