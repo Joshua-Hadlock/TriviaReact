@@ -58,17 +58,23 @@ export default function HelpPage() {
   
           </div>
           <div className="helpBody">
-          <div className="faqContainer">
-            <div class="logo"></div>
-            <div className="faqText">
-              <h1>Frequently Asked Questions</h1>
-              <h3>Q. Where are you guys located ?</h3>
-              <h3>A. We are located in Las Vegas but we are an online company.</h3>
-              <h3>Q. Do you guys have sport trivia ?</h3>
-              <h3>A. Yes we do we have all kinds of trivia</h3>
-              <h3>Q. Do you guys only have trivia ?</h3>
-              <h3>A. For the moment trivia is all we are focused on</h3>
-            </div>
+          <div className="helpScrollContent">
+              <div className="helpScrollContentLeft">
+                <h1>FAQ</h1>
+                <div className="line"></div>
+                <h3 style={{marginTop: '50px'}}>Q. Do you guys have sports Trivia ?</h3>
+                <h3>A. Yes we do we have a variety of sport Trivia</h3>
+                <h3 style={{marginTop: '50px'}}>Q. How long have you guys existed ?</h3>
+                <h3>A. We are quite a young company, we started about a year ago</h3>
+                <h3 style={{marginTop: '50px'}}>Q. Where are you guys located ?</h3>
+                <h3>A. We are an online company but we have offices in Las Vegas NV</h3>
+                <h3 style={{marginTop: '50px'}}>Q. How much trivia do you guys have ?</h3>
+                <h3>A. We have tons of hours of trivia</h3>
+                <div className="logo"></div>
+              </div>
+              <div className="helpScrollContentRight">
+            
+              </div>
           </div>
           <div class="testimonial">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">

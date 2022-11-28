@@ -105,7 +105,7 @@ export default function TriviaPage() {
 			<option value="hard">Hard</option>
 		</select>
 
-        <button onClick={changeApi}>Click to generate Questions</button>
+        <button className="generateButton" onClick={changeApi}>Click to generate Questions</button>
 
 
         {DisplayQuestions(apiData)}
