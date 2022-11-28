@@ -111,11 +111,7 @@ export default function TriviaPage() {
         {DisplayQuestions(apiData)}
 
         <h1 className="off" id='Timer'>Timer: {count}</h1>
-        <button onClick={displayFinish}>Finish</button>
         <div>padding</div>
       </div>
     )
-    function displayFinish() {
-      console.log('hi')
-    }
   }

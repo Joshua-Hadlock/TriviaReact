@@ -73,7 +73,6 @@ export default function DisplayQuestions(data) {
         <div className="questions">
             {displayableData}
             <h1>score: {score}</h1>
-           
         </div>
     )
     } else {
@@ -83,4 +82,6 @@ export default function DisplayQuestions(data) {
             </div>
         )
     }
+
+
 }
