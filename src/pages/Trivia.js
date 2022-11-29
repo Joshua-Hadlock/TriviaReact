@@ -144,7 +144,7 @@ export default function TriviaPage() {
         {DisplayQuestions(apiData)}
 
         <h1 className="off timer triviaCard littleWidget" id='Timer'>Timer: {count}</h1>
-        <button onClick={playPause}>Hello there</button>
+        <button onClick={playPause} className={'music'}>Start music</button>
         <button onClick={finishGame} className={'finishButton'} >finish</button>
       </div>
     )

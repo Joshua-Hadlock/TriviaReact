@@ -89,6 +89,12 @@
   position: fixed;
 }
 
+.music {
+  position: fixed;
+  bottom: 400px;
+  right: 300px;
+}
+
 * {
   margin: 0;
 }
