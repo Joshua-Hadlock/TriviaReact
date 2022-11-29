@@ -1,0 +1,646 @@
+.triviaCard {
+  background-color: rgba(50, 93, 113, 0.6666666667);
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.triviaPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textWhite {
+  color: rgb(223, 223, 223);
+  margin: 4px;
+  cursor: pointer;
+}
+
+.answer {
+  transition: all 0.4s;
+  border-radius: 3px;
+}
+
+.answer:hover {
+  background-color: #6ea0b7;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fullHeight {
+  height: 500px;
+}
+
+.question {
+  border-bottom: gold 2px solid;
+  width: 50%;
+}
+
+.toggleOnOff {
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.togglerOnOff {
+  background-color: blue;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.off {
+  visibility: hidden;
+}
+
+.bg-green {
+  background-color: rgb(117, 168, 117);
+}
+
+.bg-red {
+  background-color: rgb(212, 123, 123);
+}
+
+.moveAway {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.animation-preset {
+  transition: 0.5s;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #13262F;
+}
+
+#main {
+  background-image: url(../images/mainImage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+#main .mainText {
+  width: 650px;
+  height: 300px;
+  position: relative;
+  top: 250px;
+  left: 300px;
+}
+#main .mainText h1 {
+  color: black;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+#main .triviaIcons {
+  width: 600px;
+  height: 600px;
+  background-image: url(../images/My\ project-1\ \(1\).png);
+  background-size: cover;
+  position: relative;
+  left: 50%;
+  bottom: 150px;
+  animation: aliceTumbling infinite 60s linear;
+}
+@keyframes aliceTumbling {
+  0% {
+    color: #000;
+    transform: rotate(0) translate3D(0%, 0%, 0);
+  }
+  30% {
+    color: #431236;
+  }
+  100% {
+    color: #000;
+    transform: rotate(360deg) translate3D(0%, 0%, 0);
+  }
+}
+#main button {
+  background-color: #E3C567;
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+#main .logo {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  position: absolute;
+}
+
+.navBar {
+  width: 100%;
+  height: 50px;
+  background-color: #13262F;
+  position: fixed;
+  bottom: 0px;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navBar a:hover {
+  color: #E3C567;
+}
+
+footer {
+  width: 100%;
+  height: 1000px;
+  background-color: red;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.aboutPage {
+  width: 100%;
+  height: 950px;
+  background-image: url(../images/lake.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(255, 255, 255);
+}
+.aboutPage .mcqLogo {
+  height: 500px;
+  width: 500px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  top: 15%;
+}
+.aboutPage .aboutText {
+  width: 900px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  right: 5%;
+  bottom: 25%;
+}
+.aboutPage .aboutText .aboutH1 {
+  color: black;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutPage .aboutText h3 {
+  font-family: "Roboto", sans-serif;
+}
+.aboutPage .aboutText p {
+  width: 700px;
+}
+.aboutPage .aboutText .scrollForMore {
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+.aboutPage .aboutText .scrollForMore h3 {
+  position: relative;
+  top: 13px;
+}
+
+.scrolledAbout {
+  width: 100%;
+  height: 500px;
+  background-color: #13262F;
+  display: flex;
+  flex-direction: row;
+}
+.scrolledAbout .locationLeft {
+  width: 50%;
+  height: 500px;
+  background-image: url(../images/vegas.jpeg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.scrolledAbout .locationDesc {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(131, 131, 131);
+}
+.scrolledAbout .locationDesc h1 {
+  color: black;
+}
+.scrolledAbout .locationDesc p {
+  width: 500px;
+  font-size: 20px;
+}
+.scrolledAbout .locationDesc .scrolledAboutText {
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+  font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.us1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.us1 .us1Left {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+.us1 .us1Left .us1LeftText {
+  width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.us1 .us1Left h1 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.us1 .us1Left p {
+  color: black;
+  width: 700px;
+}
+.us1 .us1Right {
+  width: 50%;
+  height: 500px;
+  background-color: white;
+}
+
+.Isaac {
+  width: 500px;
+  height: 500px;
+  background-image: url(../images/me.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.us2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.us2 .us2Left {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+}
+.us2 .us2Right {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+}
+.us2 .us2Right .us2RightText {
+  width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.us2 .us2Right h1 {
+  font-family: "Roboto", sans-serif;
+}
+.us2 .us2Right p {
+  color: white;
+  width: 700px;
+}
+
+.Josh {
+  width: 400px;
+  height: 400px;
+  background-image: url(../images/josh.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+  top: 52px;
+}
+
+.parBody {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parBody:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10000;
+}
+
+.parBody:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+.parBody img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+}
+
+#helpText {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+#road {
+  z-index: 2;
+}
+
+.helpBody {
+  width: 100%;
+  height: 1500px;
+  background-color: rgb(249, 249, 249);
+  background-image: url(../images/lake2.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.helpBody .helpScrollContent {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+.helpBody .helpScrollContent .helpScrollContentLeft {
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/road.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.helpBody .helpScrollContent .helpScrollContentLeft .logo {
+  width: 150px;
+  height: 150px;
+  background-image: url(../../public/images/logo2.png);
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.helpBody .helpScrollContent .helpScrollContentLeft .line {
+  width: 200px;
+  height: 1px;
+  background-color: white;
+  margin: 0 auto;
+}
+.helpBody .helpScrollContent .helpScrollContentLeft h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.helpBody .helpScrollContent .helpScrollContentLeft h3 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.helpBody .helpScrollContent .helpScrollContentRight {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+}
+.helpBody .contactPage {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+.helpBody .contactPage h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: black;
+}
+
+.ArtWork {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/mainImage.jpg);
+  background-size: cover;
+}
+.ArtWork h1 {
+  width: 700px;
+  position: absolute;
+  right: 1100px;
+  font-family: "Roboto", sans-serif;
+  z-index: 3;
+  color: black;
+}
+
+.ArtWork:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10000;
+}
+
+.ArtWork:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7333333333);
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+.ArtWork img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.testimonial {
+  width: 100%;
+  height: 700px;
+  background-color: green;
+}
+
+.carouselSize {
+  width: 100%;
+  height: 700px;
+}
+.carouselSize .stars {
+  width: 200px;
+  height: 50px;
+  background-image: url(../images/starsClear.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+#cI1 {
+  background-image: url(../images/oldlLady.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#cI2 {
+  background-image: url(../images/coco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#cI3 {
+  background-image: url(../images/blindMan.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+span {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+}
+
+.triviaPage .logo {
+  width: 800px;
+  height: 800px;
+  background-image: url(../images/My\ project-1.png);
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  margin-top: 50px;
+  animation: myAnim 30s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.triviaPage h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+}
+.triviaPage .difficultyDrop {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.triviaPage .numberOfTrivia {
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.triviaPage .selectTrivia {
+  height: 50px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.triviaPage .generateButton {
+  border-radius: 5px;
+  background-color: rgb(134, 207, 162);
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.triviaPage .generateButton:hover {
+  background-color: rgb(91, 153, 115);
+  color: white;
+}
+
+/*# sourceMappingURL=App.css.map */

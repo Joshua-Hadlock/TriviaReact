@@ -44,19 +44,6 @@
     width: 50%;
 }
 
-.toggleOnOff {
-    background-color: red;
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-}
-
-.togglerOnOff {
-    background-color: blue;
-    width: 48px;
-    height: 48px;
-    border-radius: 5px;
-}
 
 .off {
     visibility: hidden;
@@ -70,3 +57,37 @@
     background-color: rgb(212, 123, 123);
 }
 
+.moveAway {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.animation-preset {
+}
+
+.littleWidget {
+    text-align: center;
+    position: fixed;
+    margin: 0px;
+    background-color:rgb(117, 168, 117);
+    font-size: 30px;
+    width: 250px;
+}
+.timer {
+    
+    top: 0px;
+    left: 0px;
+    
+}
+
+.score {
+    top: 0px;
+    right: 0px;
+}
+
+.finishButton {
+    bottom: 400px;
+    left: 300px;
+    position: fixed;
+}
