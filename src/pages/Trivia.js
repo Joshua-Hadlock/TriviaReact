@@ -1,8 +1,7 @@
 import getApi from "../components/triviaAPI";
-import { useState, useEffect, useRef} from "react";
+import { useState, useEffect} from "react";
 import DisplayQuestions from "../components/displayQuestions";
 import createData from "../components/createData";
-import music from '../sounds/weeknds.mp3'
 
 
 
@@ -14,19 +13,10 @@ export default function TriviaPage() {
     const [apiData, setApi] = useState();
     const [count, setCount] = useState(0);
     const [timerOff, setTimerOff] = useState(true);
-    const [Playing, setPlaying] = useState(false);
     const [timerGoing, setTimerGoing] = useState(true);
-    const audio = new Audio(music);
-    const myRef = useRef();
+    
   
-      function playPause() {
-        if (Playing) {
-          audio.pause()
-        } else {
-          audio.play()
-        }
-        setPlaying(!Playing)
-      }
+
 
 
 
@@ -73,6 +63,7 @@ export default function TriviaPage() {
     document.getElementById('numberOfTrivia').classList.add('off', 'moveAway')
     document.getElementById('generateApi').classList.add('off', 'moveAway')
     document.getElementById('difficultyDrop').classList.add('off', 'moveAway')
+    document.getElementById('finishButton').classList.remove('off');
     setTimerGoing(true);
 
     }
@@ -96,18 +87,19 @@ export default function TriviaPage() {
     document.getElementById('numberOfTrivia').classList.remove('off', 'moveAway')
     document.getElementById('generateApi').classList.remove('off', 'moveAway')
     document.getElementById('difficultyDrop').classList.remove('off', 'moveAway')
+    document.getElementById('finishButton').classList.add('off');
       setApi('finish');
       setTimerGoing(false);
     }
 
 
     return (
-      <div className="triviaPage">
+      <div className="triviaPage bottomPadding">
         <div className="logo"></div>
-        <h1>McQauckers Trivia!</h1>
+        <h1 className="triviaTitle">McQauckers Trivia!</h1>
         
 
-        <select id="selectTrivia" className="selectTrivia animation-preset" onChange={e => changeCategory(e.target.value)}>
+        <select id="selectTrivia" className="selectTrivia" onChange={e => changeCategory(e.target.value)}>
             {/* <option value="any">Any Category</option> */}
             <option value="9">General Knowledge</option>
             <option value="10">Entertainment: Books</option>
@@ -134,23 +126,22 @@ export default function TriviaPage() {
             <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
             <option value="32">Entertainment: Cartoon &amp; Animations</option>		
       </select>
-    <input id="numberOfTrivia" className="numberOfTrivia animation-preset" type={'number'} max={50} min={1} onChange={e => changeNumberOfQuestions(e.target.value)}></input>
+    <input id="numberOfTrivia" className="numberOfTrivia" type={'number'} max={50} min={1} onChange={e => changeNumberOfQuestions(e.target.value)}></input>
 
-      <select className="difficultyDrop animation-preset" id="difficultyDrop" name="difficulty" onChange={e => changeDifficulty(e.target.value)}>
+      <select className="difficultyDrop" id="difficultyDrop" name="difficulty" onChange={e => changeDifficulty(e.target.value)}>
 			{/* <option value="any">Any Difficulty</option> */}
 			<option value="easy">Easy</option>
 			<option value="medium">Medium</option>
 			<option value="hard">Hard</option>
 		</select>
 
-        <button className="generateButton animation-preset" id="generateApi" onClick={changeApi}>Click to generate Questions</button>
+        <button className="generateButton" id="generateApi" onClick={changeApi}>Click to generate Questions</button>
 
 
         {DisplayQuestions(apiData)}
 
         <h1 className="off timer triviaCard littleWidget" id='Timer'>Timer: {count}</h1>
-        <button onClick={playPause} className={'music'}>Start music</button>
-        <button onClick={finishGame} className={'finishButton'} >finish</button>
+        <button onClick={finishGame} className={'off finishButton'} id={'finishButton'}>finish</button>
       </div>
     )
   }

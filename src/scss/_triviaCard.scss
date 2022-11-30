@@ -31,6 +31,11 @@
     background-color: #6ea0b7;
 }
 
+@media only screen and (max-width: 930px) {
+    .triviaTitle {
+        visibility: hidden;
+    }
+}
 .fullWidth {
     width: 100%;
 }
@@ -63,6 +68,10 @@
     right: 0;
 }
 
+.animation-preset {
+    transition: .5s;
+}
+
 .littleWidget {
     text-align: center;
     position: fixed;
@@ -72,7 +81,6 @@
     width: 250px;
 }
 .timer {
-    
     top: 0px;
     left: 0px;
     border-radius:0px;
@@ -88,13 +96,23 @@
 }
 
 .finishButton {
-    bottom: 400px;
-    left: 300px;
-    position: fixed;
+    border-radius:5px;
+    background-color:rgb(134, 207, 162);
+    border:none;
+    padding:10px 100px;
+    margin-top:10px;
 }
+.finishButton:hover {
+    background-color:rgb(91, 153, 115);
+    color:white;
+  }
 
 .music {
-    position: fixed;
-    bottom: 400px;
-    right: 300px;
+    border: 0px;
+    background-color:#13262F;
+    color: white;
+}
+
+.bottomPadding {
+    padding-bottom: 100px;
 }
