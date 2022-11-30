@@ -64,7 +64,7 @@ export default function DisplayQuestions(data) {
         
         const displayableData = data.map((value) => {
             return (
-        <div className="triviaCard">
+        <div className="triviaCard animation-preset">
             <div>
             <div>
                 <h4 className="textWhite">{value[0].question}</h4>
