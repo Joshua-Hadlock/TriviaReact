@@ -73,6 +73,7 @@ export default function TriviaPage() {
     document.getElementById('numberOfTrivia').classList.add('off', 'moveAway')
     document.getElementById('generateApi').classList.add('off', 'moveAway')
     document.getElementById('difficultyDrop').classList.add('off', 'moveAway')
+    setTimerGoing(true);
 
     }
     
@@ -91,7 +92,11 @@ export default function TriviaPage() {
 
 
     const finishGame = () => {
-      setApi(null)
+      document.getElementById('selectTrivia').classList.remove('off', 'moveAway')
+    document.getElementById('numberOfTrivia').classList.remove('off', 'moveAway')
+    document.getElementById('generateApi').classList.remove('off', 'moveAway')
+    document.getElementById('difficultyDrop').classList.remove('off', 'moveAway')
+      setApi('finish');
       setTimerGoing(false);
     }
 

@@ -45,8 +45,14 @@ export default function DisplayQuestions(data) {
 
 
 
-
-    if (data) {
+    if (data === 'finish') {
+        const oldScore = score;
+        return (
+            <div>
+                <h1>Your score is: {oldScore}</h1>
+            </div>
+        )
+    } else if (data) {
         if (document.getElementById('scene-container')) {
             document.getElementById('scene-container').innerHTML = '';
         }
