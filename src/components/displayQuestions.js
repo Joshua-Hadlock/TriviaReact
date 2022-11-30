@@ -5,6 +5,7 @@ import createData from "./createData";;
 
 export default function DisplayQuestions(data) {
     const [score, setScore] = useState(0);
+    const [oldScore, setOldScore] = useState(0);
 
     useEffect(() => {
             document.getElementById('scene-container').innerHTML = '';
@@ -42,11 +43,14 @@ export default function DisplayQuestions(data) {
         return <div>{create}</div>
     }
 
-
+    useEffect(() => {
+        setOldScore(score)
+        setScore(0)
+    }, [data])
 
 
     if (data === 'finish') {
-        const oldScore = score;
+        
         return (
             <div>
                 <h1>Your score is: {oldScore}</h1>
