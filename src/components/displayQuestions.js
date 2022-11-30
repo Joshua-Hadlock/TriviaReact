@@ -52,8 +52,8 @@ export default function DisplayQuestions(data) {
     if (data === 'finish') {
         
         return (
-            <div>
-                <h1>Your score is: {oldScore}</h1>
+            <div className="finalScore">
+                <h1 className="h1Final">Your score is: {oldScore}</h1>
             </div>
         )
     } else if (data) {
