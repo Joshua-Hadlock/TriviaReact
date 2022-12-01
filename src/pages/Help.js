@@ -137,21 +137,21 @@ export default function HelpPage() {
   </div>
   <div class="carousel-inner">
     <div id="cI1" className="carousel-item active carouselSize">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <div class="stars"></div>
         <h4>Agatha Marie Laurence Kennedy the IV</h4>
         <p>I like it </p>
       </div>
     </div>
     <div id="cI2" className="carousel-item carouselSize">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <div class="stars"></div>
         <h4>Lulua 'ina Eleu Ailani Koa Kamea</h4>
         <p>"Grunt"</p>
       </div>
     </div>
     <div id="cI3" className="carousel-item carouselSize">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <div class="stars"></div>
         <h4>Jeff</h4>
         <p>Where am I ?</p>
