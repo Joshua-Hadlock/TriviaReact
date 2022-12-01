@@ -114,7 +114,6 @@ $highlights: #E3C567;
   font-size:50px;
  }
 
-//  Help
 
  .aboutPage {
   width:100%;
@@ -285,58 +284,8 @@ $highlights: #E3C567;
   margin:0 auto;
   position:relative;
  }
- .parBody {
-  position:relative;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-  display:flex; 
-  justify-content:center;
-  align-items:center;
- }
- .parBody:before {
-  content: '';
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:100px;
-  z-index:10000;
- }
- .parBody:after {
-  content: '';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: #0a2a43;
-  z-index:10000;
-  mix-blend-mode:color;
- }
- .parBody img {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  pointer-events:none;
- }
- #text {
-  position:relative;
-  z-index:1;
-  width:300px;
-  height:300px;
- }
- #helpText {
-  color:white;
-  position:relative;
-  z-index:1;
-  font-family: 'Roboto', sans-serif;
- }
- #road {
-  z-index:2;
- }
+
+//  ------------------------------------------Help Page------------------------------------------------------
  .helpBody {
   width:100%;
   height:1500px;
@@ -403,6 +352,51 @@ $highlights: #E3C567;
     }
    }
  }
+ .testimonial {
+  width:100%;
+  height:700px;
+ }
+ .carouselSize {
+  width:100%;
+  height:700px;
+  .stars {
+    width:200px;
+    height:50px;
+    background-image: url(../images/starsClear.png);
+    background-size:cover;
+    background-position:center;
+    margin: 0 auto;
+  }
+ }
+ #cI1{
+  background-image: url(../images/oldlLady.jpg);
+  background-size:cover;
+  background-position:center;
+ }
+ #cI2 {
+  background-image: url(../images/coco.jpg);
+  background-size:cover;
+  background-position:center;
+
+ }
+ #cI3 {
+  background-image: url(../images/blindMan.jpg);
+  background-size:cover;
+  background-position:center;
+ }
+span {
+  font-size:20px;
+  position:relative;
+  top:-5px;
+}
+.duckImage {
+  width:100%;
+  height:736px;
+  background-image: url(../images/coolestDuckAround.jpg);
+  background-size:cover;
+  background-position:center;
+}
+//  --------------------------About Page-----------------------------------------------------------
  .ArtWork {
   position:relative;
   width:100%;
@@ -457,46 +451,59 @@ $highlights: #E3C567;
   object-fit:cover;
   pointer-events:none;
  }
- #Ducks {
-  width: 850px;
- }
- .testimonial {
-  width:100%;
-  height:700px;
- }
- .carouselSize {
-  width:100%;
-  height:700px;
-  .stars {
-    width:200px;
-    height:50px;
-    background-image: url(../images/starsClear.png);
-    background-size:cover;
-    background-position:center;
-    margin: 0 auto;
-  }
- }
- #cI1{
-  background-image: url(../images/oldlLady.jpg);
-  background-size:cover;
-  background-position:center;
- }
- #cI2 {
-  background-image: url(../images/coco.jpg);
-  background-size:cover;
-  background-position:center;
-
- }
- #cI3 {
-  background-image: url(../images/blindMan.jpg);
-  background-size:cover;
-  background-position:center;
- }
-span {
-  font-size:20px;
+ .parBody {
   position:relative;
-  top:-5px;
-}
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+ }
+ .parBody:before {
+  content: '';
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+  z-index:10000;
+ }
+ .parBody:after {
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #0a2a43;
+  z-index:10000;
+  mix-blend-mode:color;
+ }
+ .parBody img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+ }
+ #text {
+  position:relative;
+  z-index:1;
+  width:300px;
+  height:300px;
+ }
+ #helpText {
+  color:white;
+  position:relative;
+  z-index:1;
+  font-family: 'Roboto', sans-serif;
+ }
+ #road {
+  z-index:2;
+ }
+
 
 // Trivia Page Styling
 .triviaPage {
@@ -572,13 +579,9 @@ span {
   }
 
 }
-.duckImage {
-  width:100%;
-  height:736px;
-  background-image: url(../images/coolestDuckAround.jpg);
-  background-size:cover;
-  background-position:center;
-}
+
+
+// -------------------------@Media-----------------------------------------------------------
 
 
 @media only screen and (max-width: 1370px) {

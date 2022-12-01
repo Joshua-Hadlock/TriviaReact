@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="aboutPage">
             <div className="aboutText">
 
-
+{/* -------------------------------------About Main Page-------------------------------------------------- */}
             <h3>About Us</h3>
             <h1 className="aboutH1">McQuackers</h1>
             <p>We believe that everyone is secretly a genius and we thought that the best way to prove that is 
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div class="locationLeft">
 
             </div>
-
+{/* -----------------------------------Location Description----------------------------------------------- */}
             <div class="locationDesc">
             <div class="scrolledAboutText">
               <h1>Where are we located?</h1>
@@ -56,6 +56,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+{/* -----------------------------------Parallax Effect----------------------------------------------- */}
           <div class="ArtWork">
             <img src="images/Mountain.png" id="Mountain" ref={nightRef}></img>
             <img src="images/DucksFlyingBackground.png" id="Ducks"></img>
@@ -67,6 +68,7 @@ export default function AboutPage() {
           <div class="us1">
             <div class="us1Left">
             <div class="us1LeftText">
+{/* -----------------------------------Isaac Description----------------------------------------------- */}
             <h1>Isaac Tellez</h1>
             <p>Isaac Tellez is our top designer. Isaac is responsible for all of the design in this website including this very page.
               Isaac has over a year expirience as a web developer he first started in high school and is now studying at Mountainland
@@ -86,6 +88,7 @@ export default function AboutPage() {
             </div>
             <div class="us2Right">
               <div class="us2RightText">
+ {/* -----------------------------------Josh Description----------------------------------------------- */}               
                 <h1>Joshua Hadlock</h1>
             <p>Joshua Hadlock is our top developer. He is responsible for all Javascript and Api in this website and 
               can make one heck of a website. He is a web developer that is currently attending Mountainland Technical College
