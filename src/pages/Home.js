@@ -1,5 +1,6 @@
 // ----------------------------------------------------Home page
 
+import { Link } from "react-router-dom"
 export default function HomePage() {
     return (
     <div>
@@ -9,7 +10,7 @@ export default function HomePage() {
             <h1>Test your knowledge with 
               McQuackers
             </h1>
-            <button>Click here to get started</button>
+            <div className="button"><Link to="/Trivia">Click here to get started</Link></div>
           </div>
           <div className="triviaIcons"></div>
         </div>
