@@ -235,7 +235,7 @@ h1 {
   background-attachment: fixed;
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -244,9 +244,6 @@ h1 {
   width: 400px;
   background-image: url(../images/My\ project-1.png);
   background-size: cover;
-  margin: 0 auto;
-  left: 20%;
-  top: 15%;
 }
 .aboutPage .aboutText {
   margin: 10px;
