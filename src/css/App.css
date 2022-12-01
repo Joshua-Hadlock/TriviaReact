@@ -568,6 +568,10 @@ span {
   pointer-events: none;
 }
 
+#Ducks {
+  width: 850px;
+}
+
 .parBody {
   position: relative;
   width: 100%;
