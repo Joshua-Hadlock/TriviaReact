@@ -2,6 +2,8 @@ import getApi from "../components/triviaAPI";
 import { useState, useEffect} from "react";
 import DisplayQuestions from "../components/displayQuestions";
 import createData from "../components/createData";
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+
 
 
 
@@ -90,6 +92,8 @@ export default function TriviaPage() {
     document.getElementById('finishButton').classList.add('off');
       setApi('finish');
       setTimerGoing(false);
+
+    confetti();
     }
 
 
@@ -141,7 +145,7 @@ export default function TriviaPage() {
         {DisplayQuestions(apiData)}
 
         <h1 className="off timer triviaCard littleWidget" id='Timer'>Timer: {count}</h1>
-        <button onClick={finishGame} className={'off finishButton'} id={'finishButton'}>finish</button>
+        <button onClick={finishGame} className={'off finishButton'} id={'finishButton'}>Finish</button>
       </div>
     )
   }
