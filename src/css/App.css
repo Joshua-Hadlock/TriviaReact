@@ -249,8 +249,7 @@ h1 {
   margin: 10px;
   width: 900px;
   height: 325px;
-  background-color: rgba(64, 125, 154, 0.667);
-  border-radius: 10px;
+  background-color: rgba(1, 101, 134, 0.621);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -535,12 +534,16 @@ h1 {
   background-image: url(../images/mainImage.jpg);
   background-size: cover;
 }
-.ArtWork h1 {
-  position: absolute;
+.ArtWork div h1 {
+  width: 50%;
   padding: 30px;
   font-family: "Roboto", sans-serif;
   z-index: 3;
   color: black;
+}
+.ArtWork .filler {
+  width: 100px;
+  height: 100px;
 }
 
 .ArtWork:before {
@@ -754,6 +757,11 @@ span {
   .us2Right {
     width: 100% !important;
     height: 400px !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .ArtWork h1 {
+    width: 100% !important;
   }
 }
 
