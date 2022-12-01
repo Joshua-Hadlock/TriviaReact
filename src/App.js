@@ -43,7 +43,7 @@ function NavBar() {
       <Link to="/Help" >Help</Link>
       <Link to="/About" >About</Link>
       <Link to="/Trivia" >Trivia!</Link>
-      <button onClick={playPause} className={'music'}><i class="fa-solid fa-music"></i></button>
+      <button onClick={playPause} className={'music'}><i className="fa-solid fa-music"></i></button>
     </nav>
     )
 }

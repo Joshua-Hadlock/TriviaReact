@@ -234,38 +234,40 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .aboutPage .mcqLogo {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-image: url(../images/My\ project-1.png);
   background-size: cover;
   margin: 0 auto;
-  position: relative;
   left: 20%;
   top: 15%;
 }
 .aboutPage .aboutText {
+  margin: 10px;
   width: 900px;
-  height: 250px;
-  margin: 0 auto;
-  position: relative;
-  right: 5%;
-  bottom: 25%;
+  height: 325px;
+  background-color: rgba(64, 125, 154, 0.667);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 .aboutPage .aboutText .aboutH1 {
-  color: black;
   font-size: 70px;
   font-family: "Montserrat", sans-serif;
 }
 .aboutPage .aboutText h3 {
   font-family: "Roboto", sans-serif;
 }
-.aboutPage .aboutText p {
-  width: 700px;
-}
 .aboutPage .aboutText .scrollForMore {
-  margin-top: 20px;
+  margin-top: 75px;
   width: 300px;
   height: 50px;
   border-bottom: 2px solid white;
@@ -296,20 +298,20 @@ h1 {
   width: 50%;
   height: 500px;
   background-color: rgb(131, 131, 131);
+  display: flex;
+  align-items: center;
 }
 .scrolledAbout .locationDesc h1 {
   color: black;
+  font-size: 230x;
 }
 .scrolledAbout .locationDesc p {
-  width: 500px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .scrolledAbout .locationDesc .scrolledAboutText {
-  width: 600px;
-  height: 200px;
+  padding: 10px;
   margin: 0 auto;
   position: relative;
-  top: 25%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -324,21 +326,20 @@ h1 {
 
 .us1 {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 .us1 .us1Left {
-  width: 50%;
-  height: 500px;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 60%;
 }
 .us1 .us1Left .us1LeftText {
-  width: 700px;
-  height: 200px;
   margin: 0 auto;
   position: relative;
-  top: 25%;
 }
 .us1 .us1Left h1 {
   font-family: "Roboto", sans-serif;
@@ -346,61 +347,59 @@ h1 {
 }
 .us1 .us1Left p {
   color: black;
-  width: 700px;
 }
 .us1 .us1Right {
-  width: 50%;
-  height: 500px;
   background-color: white;
+  width: 40%;
 }
 
 .Isaac {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/me.png);
   background-size: cover;
+  background-position: center;
   margin: 0 auto;
 }
 
 .us2 {
   width: 100%;
+  height: 500px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
 .us2 .us2Left {
-  width: 50%;
+  width: 40%;
   height: 500px;
   background-color: rgb(0, 0, 0);
 }
 .us2 .us2Right {
-  width: 50%;
+  width: 60%;
   height: 500px;
   background-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .us2 .us2Right .us2RightText {
-  width: 700px;
-  height: 200px;
   margin: 0 auto;
   position: relative;
-  top: 25%;
 }
 .us2 .us2Right h1 {
   font-family: "Roboto", sans-serif;
 }
 .us2 .us2Right p {
   color: white;
-  width: 700px;
 }
 
 .Josh {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/josh.png);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
   position: relative;
-  top: 52px;
 }
 
 .parBody {
@@ -541,9 +540,8 @@ h1 {
   background-size: cover;
 }
 .ArtWork h1 {
-  width: 700px;
   position: absolute;
-  right: 1100px;
+  padding: 30px;
   font-family: "Roboto", sans-serif;
   z-index: 3;
   color: black;
@@ -578,6 +576,10 @@ h1 {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+}
+
+#Ducks {
+  width: 850px;
 }
 
 .testimonial {
@@ -708,6 +710,35 @@ span {
 @media only screen and (max-width: 700px) {
   .logo {
     position: fixed;
+  }
+}
+@media only screen and (max-width: 1415px) {
+  .mcqLogo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  .us1Left {
+    width: 100% !important;
+    height: 400px;
+  }
+  .us1Right {
+    width: 100% !important;
+    height: 600px;
+  }
+  .us1 {
+    height: 1000px;
+  }
+  .us2 {
+    height: 1000px;
+  }
+  .us2Left {
+    width: 100% !important;
+    height: 600px !important;
+  }
+  .us2Right {
+    width: 100% !important;
+    height: 400px !important;
   }
 }
 

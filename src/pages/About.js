@@ -27,7 +27,6 @@ export default function AboutPage() {
       <div>
         <div className="aboutBody">
           <div className="aboutPage">
-            <div className="mcqLogo"></div>
             <div className="aboutText">
 
 
@@ -40,6 +39,7 @@ export default function AboutPage() {
             </p>
             <div className="scrollForMore"><h3>Scroll For More</h3></div>
             </div>
+            <div className="mcqLogo"></div>
           </div>
           <div className="scrolledAbout">
             <div class="locationLeft">
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
             <div class="locationDesc">
             <div class="scrolledAboutText">
-              <h1>Where are we located ?</h1>
+              <h1>Where are we located?</h1>
               <p>We are an online company but our corporate building is located in Las Vegas NV, we also have a new corporate
                 location in London Uk but we are mostly based in USA. Our building is located in Paradise Las Vegas in front of
                 Mandalay Bay and in that building we answer calls about our website.
