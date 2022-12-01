@@ -48,7 +48,7 @@ export default function HelpPage() {
 
           </div> */}
           <div className="parBody">
-          
+{/* -----------------------------------Main Page----------------------------------------------- */}         
           <img src="images/bg.jpg" id="bg" ref={bgRef}></img>
           <img src="images/moon.png" id="moon"></img>
           <img src="images/mountain.png" id="mountain"></img>
@@ -60,6 +60,7 @@ export default function HelpPage() {
           <div className="helpBody">
           <div className="helpScrollContent">
               <div className="helpScrollContentLeft">
+{/* -----------------------------------Frequently Asked Questions-------------------------------- */}
                 <h1>FAQ</h1>
                 <div className="line"></div>
                 <h3 style={{marginTop: '50px'}}>Q. Do you guys have sports Trivia ?</h3>
@@ -75,6 +76,7 @@ export default function HelpPage() {
               <div className="helpScrollContentRight">
               <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
+{/* -----------------------------------Accordion----------------------------------------------- */}
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         How Do I Get Started ?
@@ -124,6 +126,7 @@ export default function HelpPage() {
       <div class="accordion-body">We have an about page but a little bit about us is we are an independent company run by 2 students, we started about a week ago and we are still at it.</div>
     </div>
   </div>
+{/* -----------------------------------Duck Image----------------------------------------------- */}
   <div class="duckImage"></div>
 </div>
               </div>
@@ -135,6 +138,7 @@ export default function HelpPage() {
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+{/* -----------------------------------Testimonials----------------------------------------------- */}
   <div class="carousel-inner">
     <div id="cI1" className="carousel-item active carouselSize">
       <div class="carousel-caption">
@@ -170,6 +174,7 @@ export default function HelpPage() {
 
           </div>
           <div class="contactPage">
+{/* -----------------------------------Call----------------------------------------------- */}
             <h1>Questions? Please call 801-485-4936</h1>
           </div>
           </div>
