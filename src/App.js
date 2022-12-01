@@ -25,7 +25,10 @@ export default function App() {
 }
 
 
+// --------------------------Navbar doesn't work if seperate file, so it is here...
 function NavBar() {
+
+  // ----------------------------------------------------creates a system to play music!!
   const [Playing, setPlaying] = useState(false);
   const audio = new Audio(music);
   const myRef = useRef();
@@ -37,6 +40,8 @@ function NavBar() {
     }
     setPlaying(true)
   }
+
+  // ----------------------------------------------------actual Navbar
   return (
     <nav className='navBar'>
       <Link to="/" >Home</Link>

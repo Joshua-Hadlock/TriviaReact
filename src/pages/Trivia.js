@@ -1,3 +1,4 @@
+// ---------------------------------------------------trivia page
 import getApi from "../components/triviaAPI";
 import { useState, useEffect} from "react";
 import DisplayQuestions from "../components/displayQuestions";
@@ -9,6 +10,7 @@ import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 
 
 export default function TriviaPage() {
+  // ---------------------------------------------------set the default set of the options
     const [category, setCategory] = useState("9");
     const [numberOfQuestions, setNumberOfQuestions] = useState(10);
     const [difficulty, setDifficulty] = useState('easy')
@@ -22,7 +24,7 @@ export default function TriviaPage() {
 
 
 
-
+// ---------------------------------------------------timer setup
     useEffect(
       () => {
           const timer = () => {
@@ -59,6 +61,7 @@ export default function TriviaPage() {
       setTimerOff(false);
     }
 
+    // removes all correct and wrong questions that for some reason don't disappear
     document.querySelectorAll('.bg-red').forEach(e => e.classList.remove('bg-red'));
     document.querySelectorAll('.bg-green').forEach(e => e.classList.remove('bg-green'));
     document.getElementById('selectTrivia').classList.add('off', 'moveAway')
@@ -85,6 +88,8 @@ export default function TriviaPage() {
 
 
     const finishGame = () => {
+
+      // ---------------------------------------------------move the options stuff out of site
       document.getElementById('selectTrivia').classList.remove('off', 'moveAway')
     document.getElementById('numberOfTrivia').classList.remove('off', 'moveAway')
     document.getElementById('generateApi').classList.remove('off', 'moveAway')
@@ -104,7 +109,7 @@ export default function TriviaPage() {
         
 
         <select id="selectTrivia" className="selectTrivia" onChange={e => changeCategory(e.target.value)}>
-            {/* <option value="any">Any Category</option> */}
+            {/* all the categories that you can play */}
             <option value="9">General Knowledge</option>
             <option value="10">Entertainment: Books</option>
             <option value="11">Entertainment: Film</option>
@@ -130,8 +135,11 @@ export default function TriviaPage() {
             <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
             <option value="32">Entertainment: Cartoon &amp; Animations</option>		
       </select>
+
+      {/* number of questions */}
     <input id="numberOfTrivia" className="numberOfTrivia" type={'number'} max={50} min={1} onChange={e => changeNumberOfQuestions(e.target.value)}></input>
 
+{/* difficulty settings */}
       <select className="difficultyDrop" id="difficultyDrop" name="difficulty" onChange={e => changeDifficulty(e.target.value)}>
 			{/* <option value="any">Any Difficulty</option> */}
 			<option value="easy">Easy</option>
@@ -139,11 +147,15 @@ export default function TriviaPage() {
 			<option value="hard">Hard</option>
 		</select>
 
-        <button className="generateButton" id="generateApi" onClick={changeApi}>Click to generate Questions</button>
+{/* generate questions button */}
+        <button className="generateButton" id="generateApi" onClick={changeApi}>START!!!</button>
 
 
+{/* all the data */}
         {DisplayQuestions(apiData)}
 
+
+{/* timer and finish button */}
         <h1 className="off timer triviaCard littleWidget" id='Timer'>Timer: {count}</h1>
         <button onClick={finishGame} className={'off finishButton'} id={'finishButton'}>Finish</button>
       </div>

@@ -1,8 +1,11 @@
+// ---------------------------------------------------changes the API data so that it is more useable
+
 import { useState } from "react";
 
 
 export default function createData(data) {
-    console.log(data)
+    
+    // data to be sent to the other function
     const allTheAnswers = [];
 
     function correctGrammer(text) {
@@ -12,7 +15,7 @@ export default function createData(data) {
         return text
     }
 
-
+    // ---------------------------------------------------create data
     data.results.map((question) => {
         const theAnswers = [];
         question.incorrect_answers.map((answer) => {
@@ -20,6 +23,8 @@ export default function createData(data) {
             console.log(answer)
             theAnswers.push({name : answer, answer : false})
         })
+
+        // ---------------------------------------------------put the position of the correct answer in a random location
         const randomPosition = Math.floor(Math.random() * (question.incorrect_answers.length + 1))
         var correctAnswer = question.correct_answer;
         correctAnswer = correctGrammer(correctAnswer)
