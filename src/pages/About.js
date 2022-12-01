@@ -59,7 +59,10 @@ export default function AboutPage() {
           <div class="ArtWork">
             <img src="images/Mountain.png" id="Mountain" ref={nightRef}></img>
             <img src="images/DucksFlyingBackground.png" id="Ducks"></img>
-            <h1>"Any bookmark worth more than a dollar is a waste of money because you could just use the dollar" <span>- Random Person</span></h1>
+            <div>
+              <h1>"Any bookmark worth more than a dollar is a waste of money because you could just use the dollar" <span>- Random Person</span></h1>
+              <div className='filler'></div>
+              </div>
           </div>
           <div class="us1">
             <div class="us1Left">

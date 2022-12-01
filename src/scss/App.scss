@@ -138,6 +138,7 @@ $highlights: #E3C567;
     width:900px;
     height:325px;
     background-color: rgba(1, 101, 134, 0.621);
+    // border-radius: 10px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -412,13 +413,21 @@ $highlights: #E3C567;
   align-items:center;
   background-image:url(../images/mainImage.jpg);
   background-size:cover;
-  h1 {
-    position:absolute;
+  div {
+    h1 {
+      width: 50%;
     padding: 30px;
     font-family: 'Roboto', sans-serif;
     z-index:3;
     color:black;
   }
+  }
+  .filler {
+    width: 100px;
+    height: 100px;
+  }
+
+
  }
  .ArtWork:before {
   content: '';
@@ -634,5 +643,11 @@ span {
   .us2Right {
     width: 100% !important;
     height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .ArtWork h1 {
+    width: 100% !important;
   }
 }
